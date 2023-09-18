@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hi I'm Luna, a UI/UX Designer based in Vancouver." />
+    <link rel="stylesheet" href="https://use.typekit.net/adk4jxe.css" />
+    <link rel="stylesheet" href="css/cssreset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styledark.css" />
+    <link rel="stylesheet" href="css/stylemobile.css" />
+    <link rel="stylesheet" href="css/btn.css" />
+    <title>Luna Portfolio Website</title>
+    <script>
+        if (sessionStorage.getItem("isThemeDark")) {
+            if (!document.querySelector("html").hasAttribute("data-theme")) {
+                document.querySelector("html").setAttribute("data-theme", "dark");
+            }
+        } else {
+            if (document.querySelector("html").hasAttribute("data-theme")) {
+                document.querySelector("html").removeAttribute("data-theme");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main id="main" class="horizontal-scroll-base">
+        <img class="scrollable background-filling" id="wind" src="images/background-fillings/wind.svg" alt="" />
+        <section class="scrollable section hero">
+            <div class="theme-toggle">
+                <input type="checkbox" id="switch" /><label for="switch"></label>
+            </div>
+            <div class="container centered-content">
+                <img id="fivebirds" class="background-filling light-specific" src="images/background-fillings/fivebirds.svg"
+                    alt="" />
+                <img id="fivebats" class="background-filling dark-specific" src="images/background-fillings/fivebats.svg"
+                    alt="" />
+                <img id="cloud1" class="background-filling light-specific" src="images/background-fillings/cloud1.svg" alt="" />
+                <img id="cloud2" class="background-filling light-specific" src="images/background-fillings/cloud2.svg" alt="" />
+                <img id="cloud3" class="background-filling light-specific" src="images/background-fillings/cloud3.svg" alt="" />
+                <img id="sun" class="background-filling light-specific" src="images/background-fillings/sun.svg" alt="" />
+                <img id="moon" class="background-filling dark-specific" src="images/background-fillings/moon.svg" alt="" />
+                <div class="logo">
+                    <img src="images/logo-moon-and-canvas.svg" class="light-specific" alt="logo-moon-and-canvas" srcset="" />
+                    <img src="images/logo-moon-and-canvas-dark.svg" class="dark-specific" alt="logo-moon-and-canvas" srcset="" />
+                </div>
+                <div class="logo-mobile">
+                    <img src="images/glowing-moon.png" alt="glowing-moon" srcset="" />
+                </div>
+                <h1 class="im-luna">
+                    Hi I'm Luna,<br />
+                    a UI/UX Designer<br />
+                    based in Vancouver.
+                </h1>
+                <p class="light-specific">
+                    Don't forget to try the dark mode, that's my fav part!
+                </p>
+                <p class="dark-specific wander-around">
+                    Wander around, I Hope you enjoy the tour!
+                </p>
+                <button id="about-me-btn" class="btn btn-2 btn-2g">
+                    About Me
+                </button>
+                <div class="my-works-horizontal">
+                    <img src="images/my-works-sign-mobile.svg" alt="my-works-horizontal" srcset="" />
+                </div>
+                <div class="my-works-sign">
+                    <img src="images/my-works-sign.svg" class="light-specific" alt="my-works-sign" srcset="" />
+                    <img src="images/my-works-sign-dark.svg" class="dark-specific" alt="my-works-sign" srcset="" />
+                </div>
+            </div>
+        </section>
+        <section class="scrollable section works">
+            <img id="balloon1" class="background-filling light-specific" src="images/background-fillings/balloon1.svg" alt="" />
+            <img id="cloud4" class="background-filling light-specific" src="images/background-fillings/cloud4.svg" alt="" />
+            <img id="cloud5" class="background-filling light-specific" src="images/background-fillings/cloud5.svg" alt="" />
+            <img id="balloon2" class="background-filling light-specific" src="images/background-fillings/balloon2.svg" alt="" />
+            <img id="balloon3" class="background-filling light-specific" src="images/background-fillings/balloon3.svg" alt="" />
+
+            <img id="bat1" class="background-filling dark-specific" src="images/background-fillings/bat1.svg" alt="" />
+            <img id="spider1" class="background-filling dark-specific" src="images/background-fillings/spider1.svg" alt="" />
+            <img id="bat2" class="background-filling dark-specific" src="images/background-fillings/bat2.svg" alt="" />
+            <img id="spider2" class="background-filling dark-specific" src="images/background-fillings/spider2.svg" alt="" />
+
+            <a class="project-box" href="lolclient.html">
+                <div class="project-image">
+                    <img src="images/projects/thumbnails/lol.png" alt="" />
+                </div>
+                <h2 class="project-title">LoL Client</h2>
+                <div class="project-genre">UI Redesign</div>
+            </a>
+            <a class="project-box" href="colourfit.html">
+                <div class="project-image">
+                    <img src="images/projects/thumbnails/colourfit.png" alt="" />
+                </div>
+                <h2 class="project-title">Colourfit</h2>
+                <div class="project-genre">Team Project</div>
+            </a>
+            <a class="project-box" href="luna.html">
+                <div class="project-image">
+                    <img src="images/projects/thumbnails/luna.png" alt="" />
+                </div>
+                <h2 class="project-title">Luna</h2>
+                <div class="project-genre">Personal Branding</div>
+            </a>
+            <a class="project-box" href="ravit-app.html">
+                <div class="project-image">
+                    <img src="images/projects/thumbnails/ravitapp.png" alt="" />
+                </div>
+                <h2 class="project-title">Ravit App</h2>
+                <div class="project-genre">Redesign</div>
+            </a>
+            <a class="project-box" href="parallelplay.html">
+                <div class="project-image">
+                    <img src="images/projects/thumbnails/parallelplay.png" alt="" />
+                </div>
+                <h2 class="project-title">Parallel Play</h2>
+                <div class="project-genre">UX/UI Design</div>
+            </a>
+            <a class="project-box" href="gallop.html">
+                <div class="project-image">
+                    <img src="images/projects/thumbnails/gallop.png" alt="" />
+                </div>
+                <h2 class="project-title">Gallop</h2>
+                <div class="project-genre">Team Project</div>
+            </a>
+        </section>
+        <section class="scrollable section about">
+            <img id="about-bird" class="background-filling light-specific" src="images/background-fillings/about-bird.svg"
+                alt="" />
+            <img id="about-dragon" class="background-filling dark-specific" src="images/background-fillings/about-dragon.svg"
+                alt="" />
+            <img id="about-spider" class="background-filling dark-specific" src="images/background-fillings/about-spider.svg"
+                alt="" />
+            <div id="about-container" class="container centered-content">
+                <img class="luna-illustration" src="images/luna-illustration.png" alt="luna-illustration" />
+                <h1 id="about-me">About Me</h1>
+                <p class="about-text">
+                    A UI/UX designer experienced in creating both digital
+                    and printed materials. Dedicated to creating engaging
+                    mobile app UIs, website interfaces, printed proposals
+                    and more by making user-centred designs that are both
+                    aesthetically pleasing and accessible.
+                </p>
+                <p class="lets-chat-text">
+                    Whether you have a project you'd like to collaborate on
+                    or just want to have a conversation over a coffee, feel
+                    free to get in touch! I would love to have a chat!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:lunabenay@gmail.com" target="_blank" class="contact-item">
+                        <img class="light-specific" src="images/icons/email.svg" alt="lunabenay@gmail.com" srcset="" />
+                        <img class="dark-specific" src="images/icons/email-dark.svg" alt="lunabenay@gmail.com" srcset="" />
+                        <p>lunabenay@gmail.com</p>
+                    </a>
+                    <a href="https://linkedin.com/in/lunasever" target="_blank" class="contact-item">
+                        <img class="light-specific" src="images/icons/website.svg" alt="linkedin.com/in/lunasever" srcset="" />
+                        <img class="dark-specific" src="images/icons/website-dark.svg" alt="linkedin.com/in/lunasever"
+                            srcset="" />
+                        <p>linkedin.com/lunasever</p>
+                    </a>
+                    <a href="luna-sever-resume.pdf" target="_blank" class="contact-item">
+                        <img class="light-specific" src="images/icons/download.svg" alt="resume" srcset="" />
+                        <img class="dark-specific" src="images/icons/download-dark.svg" alt="resume" srcset="" />
+                        <p>Download Resume</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

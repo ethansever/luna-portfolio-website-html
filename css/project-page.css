@@ -1,0 +1,228 @@
+#brightness {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+/* Project page */
+.project-page {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: "tablet-gothic" !important;
+}
+
+.project-page .header {
+    display: flex;
+    align-items: center;
+    height: 170px;
+    padding: 0 50px;
+    background: url('/images/project-page-header-background.svg') no-repeat center bottom/100%;
+}
+
+.project-page .header .back-btn {
+    padding: 16px 50px;
+}
+
+.project-page .back-btn.mobile {
+    display: none;
+}
+
+.project-page .header .column {
+    float: left;
+    width: 33%;
+}
+
+.project-page .header .column.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.project-page .project-hero, .project-page .project-container {
+    margin: auto;
+    max-width: 980px;
+    padding: 0 20px;
+}
+
+.project-page .project-hero {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.project-page .project-hero .project-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+    flex: 0 0 402px;
+    width: 402px;
+    height: 365px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.project-page h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.project-page .project-type {
+    font-size: 48px;
+    line-height: 100%;
+    margin-top: 5px;
+}
+
+.project-page .project-description {
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.project-page .project-links {
+    display: flex;
+    gap: 20px;
+}
+
+.project-page .project-link {
+    margin-top: 8px;
+    color: #000;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    display: block;
+}
+
+.project-page .project-link .project-link-text {
+    vertical-align: middle;
+    text-decoration: underline;
+    margin-left: 8px;
+}
+
+.project-page .project-details {
+    font-size: 18px;
+    line-height: 150%;
+    display: grid;
+    gap: 0 30px;
+    grid-template-columns: 100px 1fr;
+    margin-top: 20px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.project-page .project-container {
+    margin-top: 75px;
+}
+
+.project-page .project-container-white-square {
+    border-radius: 62px;
+    background: #FFF;
+    padding: 75px 95px;
+    margin-bottom: 40px;
+}
+
+.project-page .project-container-white-square>*:first-child {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.project-page h2 {
+    padding: 75px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.project-page ul {
+    padding-left: 40px;
+}
+
+.project-page p {
+    margin-top: 10px;
+}
+
+.project-page .bullet-list {
+    list-style: disc;
+}
+
+.project-page .project-work {
+    margin-top: 15px;
+}
+
+.project-page .numbered-list {
+    list-style: decimal;
+}
+
+.project-page .alphabet-list {
+    list-style: upper-alpha;
+}
+
+
+@media (max-width: 900px) {
+    .project-page .project-hero .project-cover {
+        flex: 0;
+        aspect-ratio: 1;
+    }
+
+    @supports not (aspect-ratio: 1 / 1) {
+        .project-page .project-hero .project-cover::before {
+          float: left;
+          padding-top: 100%;
+          content: "";
+        }
+      
+        .project-page .project-hero .project-cover::after {
+          display: block;
+          content: "";
+          clear: both;
+        }
+      }
+
+    .project-page {
+        font-size: 14px;
+    }
+
+    .project-page .project-hero {
+        flex-direction: column;
+    }
+
+    .project-page .back-btn.mobile {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .project-page .header .back-btn.desktop {
+        display: none;
+    }
+
+    .project-page .project-container-white-square {
+        padding: 40px 20px;
+    }
+
+    .project-page h1 {
+        font-size: 42px;
+    }
+
+    .project-page .project-type {
+        font-size: 32px;
+    }
+
+    .project-page .project-description {
+        font-size: 16px;
+    }
+
+    .project-page .project-details {
+        font-size: 16px;
+    }
+
+    .project-page h2 {
+        font-size: 18px;
+        padding: 40px 0 0;
+    }
+}

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "ZombiePunksRegular";
+    src: url("/font/ZombiePunksRegular.ttf");
+}
+
+.dark-specific {
+    display: none;
+}
+html[data-theme='dark'] .dark-specific {
+    display: initial;
+}
+.light-specific {
+    display: initial;
+}
+html[data-theme='dark'] .light-specific {
+    display: none;
+}
+
+/*********************************/
+
+html[data-theme='dark'] {
+    --color-primary: #FFF;
+
+    --body-background-color: #303030;
+}
+
+/* Miscellaneous */
+html[data-theme='dark'] .im-luna {
+    color: rgba(238, 238, 238, 0.93);
+}
+
+html[data-theme='dark'] .wander-around {
+    color: #EEE;
+    font-family: "ZombiePunksRegular";
+    margin-top: var(--30px-in-vh);
+    font-size: var(--27px-in-vh);
+    line-height: var(--27px-in-vh);
+}
+
+html[data-theme='dark'] #wind {
+    opacity: .3;
+}
+
+/* Typography */
+html[data-theme='dark'] h1, html[data-theme='dark'] h2, html[data-theme='dark'] h3 {
+    font-family: "ZombiePunksRegular";
+}
+
+/* Styling */
+html[data-theme='dark'] .about .contact-links .contact-item p {
+    background-color: #221F23;
+}
+
+#about-dragon {
+    top: 91px;
+    left: 31px;
+}
+
+#about-spider {
+    top: 0;
+    right: 195px;
+}
+
+#bat1 {
+    top: 65px;
+    left: 18%;
+}
+
+#spider1 {
+    top: 0;
+    left: 55%;
+}
+
+#bat2 {
+    bottom: 10%;
+    left: 60%
+}
+
+#spider2 {
+    top: 0;
+    left: 78%;
+}
+
+html[data-theme='dark'] .works {
+    background: url('/images/witch.svg') no-repeat center/calc(100% - 522px);
+}

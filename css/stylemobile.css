@@ -1,0 +1,149 @@
+@media screen and (max-width: 991px) {
+    .background-filling, .theme-toggle, .hero .logo, .hero .my-works-sign, .hero p {
+        display: none;
+    }
+
+    hr {
+        display: block;
+        border: 1px solid #6A4D9F;
+        margin: 0;
+    }
+
+
+    h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .button-primary {
+        font-size: 16px;
+    }
+
+    body {
+        height: auto;
+    }
+
+    .horizontal-scroll-base {
+        height: auto;
+        display: block;
+        overflow-x: unset;
+    }
+
+    .section {
+        height: auto;
+        display: block;
+    }
+
+    .hero {
+        background: url('/images/background-fillings/mobile-hero-background.svg') no-repeat top/100%;
+    }
+
+    .hero h1 {
+        margin-top: 22px;
+    }
+
+    .hero .logo-mobile {
+        display: block;
+        text-align: center;
+        margin-top: 125px;
+    }
+
+    .hero .my-works-horizontal {
+        display: block;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .hero .my-works-horizontal img {
+        width: 100px;
+    }
+
+
+    .works {
+        padding: 30px 20px 50px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .works .project-box:nth-child(even), .works .project-box:nth-child(odd) {
+        transform: none;
+    }
+
+    .works .project-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 8px 12px;
+    }
+
+    .works .project-box:last-child {
+        margin: 0;
+    }
+
+    .works .project-image {
+        width: 115px;
+        height: 115px;
+        border-radius: 36px;
+        grid-row: span 2;
+        margin-left: auto;
+    }
+
+    .works .project-title {
+        margin-top: 0;
+        align-self: flex-end;
+        text-align: left;
+    }
+
+    .works .project-genre {
+        margin-top: 0;
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .works .project-box:nth-of-type(even) .project-image {
+        order: 2;
+        margin-right: auto;
+        margin-left: unset;
+    }
+
+    .works .project-box:nth-of-type(even) .project-title {
+        order: 1;
+        text-align: right;
+    }
+
+    .works .project-box:nth-of-type(even) .project-genre {
+        order: 3;
+        text-align: right;
+    }
+
+    .about .contact-links {
+        flex-direction: column;
+        margin: 20px 0 40px;
+    }
+
+    .about .contact-links .contact-item img {
+        display: none;
+    }
+
+    .about .container {
+        padding: 0 30px;
+    }
+
+    .about .container .luna-illustration {
+        width: 120px;
+    }
+
+    .about .about-text {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .about .lets-chat-text {
+        margin-top: 30px;
+        font-size: 13px;
+        line-height: 16px;
+        max-width: var(--494px-in-vh);
+    }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi I'm Luna, a UI/UX Designer based in Vancouver." />
+    <link rel="stylesheet" href="https://use.typekit.net/adk4jxe.css">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/project-page.css">
+    <title>Luna - LoL Client UI Redesign</title>
+
+    <!-- Page specific CSS -->
+    <style>
+        .btn-2 {
+            box-shadow: 0 6px #6187D0;
+        }
+
+        .btn-2g:hover {
+            box-shadow: 0 4px #6187D0;
+        }
+
+        .btn-2g:active {
+            box-shadow: 0 0 #6187D0;
+        }
+
+        .project-page {
+            background-color: #DFE7F6;
+        }
+
+        .project-cover {
+            background: linear-gradient(134deg, #6187D0 3.77%, #64B0EA 100%);
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+
+<body class="project-page">
+    <header class="header">
+        <img id="brightness" src="images/brightness.svg" alt="">
+        <div class="column">
+            <a href="/" class="btn btn-2 btn-2g back-btn desktop">Home</a>
+        </div>
+        <div class="column logo">
+            <img src="images/logo-moon-white.svg" alt="">
+        </div>
+        <div class="column"></div>
+    </header>
+    <a href="/" class="btn btn-2 btn-2g back-btn mobile">Home</a>
+    <div class="project-hero">
+        <div class="project-cover">
+            <img width="244" height="220" alt="lol-cover" srcset="/images/projects/lolclient/lol-cover@1x.png 1x,
+                        /images/projects/lolclient/lol-cover@2x.png 2x,
+                        /images/projects/lolclient/lol-cover@3x.png 3x" src="/images/projects/lolclient/lol-cover@3x.png">
+        </div>
+        <div class="project-credentials">
+            <h1>LoL Client</h1>
+            <div class="project-type">UI Redesign</div>
+            <a class="project-link" target="_blank"
+                href="https://www.figma.com/file/kE3kGXejjkp3CH2XA880at/League-of-Legends-Client---Redesign?type=design&node-id=0%3A1&mode=design&t=xKgs1hZivgcSRlaK-1">
+                <img src="/images/icons/link.svg" alt="figma link" width="16" height="16"><span
+                    class="project-link-text">Figma</span></a>
+            <p class="project-description">
+                League of Legends (LoL) is multiplayer online battle arena video game by Riot Games featuring team-based
+                competitive game mode based on strategy.
+            </p>
+            <div class="project-details">
+                <div><strong>Date</strong></div>
+                <div>September 2023</div>
+                <div><strong>My role</strong></div>
+                <div>UX/UI Designer</div>
+                <div><strong>Team size</strong></div>
+                <div>N/A</div>
+            </div>
+        </div>
+    </div>
+    <main class="project-container">
+        <div class="project-container-white-square">
+
+            <h2>Problems</h2>
+            <ul class="numbered-list">
+                <li>Lack of Hierarchy: Even though the page has two different levels of header, there isn't any distinction among
+                    them. Both of them use the same font size and weight. Lack of hierarchy is addressed by fixing font sizes.
+                </li>
+                <li>Lack of Consistency: Height between input field and dropdown is identical in the other pages on the game. But
+                    in
+                    Set Profile Background Page they are inconsistent with each other. And the tracking of the dropdown texts are
+                    not
+                    matching with the rest of the UI Kit and typography. This is fixed by changing tracking to be inline with the
+                    rest
+                    of the pages and equalizing the heights of the containers.</li>
+                <li>Lack of Sorting & Categorization: In the Dropdown the choices given to players are either sorted by purchase
+                    date
+                    decreasing or alphabetically increasing. But in LoL, sometimes older skins are way cooler to showcase since
+                    they
+                    are more rare. If a user wanted to pick an older skin, they have to scroll all the way down to be able to
+                    pick.
+                    This problem is addressed by adding more options to dropdown and adding separate navigation for distinguishing
+                    between skins and defaults/classics of the characters.</li>
+                <li>Lack of Distinction: Save button and restore defaults button are used side by side with little to no
+                    distinction
+                    among each other. To eliminate this they used the hover effect on Save Button at all times which confuses the
+                    players even more because of their learned behaviors. I have added the restore default button with two
+                    choices,
+                    and conducted preference testing to decide the final option.</li>
+            </ul>
+
+            <div class="project-work">
+                <img loading="lazy" alt="problems" srcset="/images/projects/lolclient/problems@1x.png 1x,
+                        /images/projects/lolclient/problems@2x.png 2x,
+                        /images/projects/lolclient/problems@3x.png 3x" src="/images/projects/lolclient/problems@3x.png">
+            </div>
+
+            <h2>Reference points</h2>
+            <div class="project-work">
+                <img loading="lazy" alt="referencepoint" srcset="/images/projects/lolclient/referencepoint@1x.png 1x,
+                        /images/projects/lolclient/referencepoint@2x.png 2x,
+                        /images/projects/lolclient/referencepoint@3x.png 3x"
+                    src="/images/projects/lolclient/referencepoint@3x.png">
+            </div>
+
+            <h2>Reference points explained</h2>
+            <ul class="alphabet-list">
+                <li>Lack of Hierarchy: Formerly “Restore Defaults” had a smaller icon button version . But with the new updates it
+                    has
+                    been removed. And yet not replaced with anything else that corresponds. Instead there is one new function
+                    added
+                    which you can delete an icon by dragging, this function only deletes the emote from the player's “shown”
+                    emotes.
+                    This could confuse players because the player's thought process can be “if they drag it to the trashcan icon,
+                    their remote will be deleted permanently”. This thought is a learned behavior for players, in many aspects of
+                    UI,
+                    files are dragged to the trash can to be deleted from that respected path the user is in. But in this LoL
+                    Client's
+                    case, they are not permanently deleted rather deleted from that shown page and can be replaced.</li>
+                <li>This page shows the players their customizable identity page, this will be my reference point for creating a
+                    first
+                    & second header and search & filter bar for “Set Profile Background” Page.</li>
+                <li>In the client's “Settings” Page, my reference points were “restore defaults” and “Done” button placements</li>
+            </ul>
+            <p>These reference points were taken into account to create new pages inline and synchronous with the rest of the user
+                interfaces. And by having reference points, I wanted to take into account the players previous interactions with
+                the
+                interface.
+            </p>
+
+            <h2>Solutions</h2>
+            <p>Lack of hierarchy is addressed by fixing font sizes. Input field boxes and dropdown containers heights are
+                rearranged
+                and tracking of the dropdown texts are matched with the rest of the user interface and typography. Lack of Sorting
+                &
+                Categorization is addressed by adding more options to dropdown and adding separate navigation for distinguishing
+                between skins and defaults/classics of the characters.</p>
+            <p>To eliminate lack of distinction, I have added the restore default button with two choices, and conducted
+                preference
+                testing to decide the final option.
+            </p>
+
+            <div class="project-work">
+                <img loading="lazy" alt="solutions1" srcset="/images/projects/lolclient/solutions1@1x.png 1x,
+                        /images/projects/lolclient/solutions1@2x.png 2x,
+                        /images/projects/lolclient/solutions1@3x.png 3x" src="/images/projects/lolclient/solutions1@3x.png">
+            </div>
+
+            <div class="project-work">
+                <img loading="lazy" alt="solutions2" srcset="/images/projects/lolclient/solutions2@1x.png 1x,
+                        /images/projects/lolclient/solutions2@2x.png 2x,
+                        /images/projects/lolclient/solutions2@3x.png 3x" src="/images/projects/lolclient/solutions2@3x.png">
+            </div>
+
+            <div class="project-work" style="text-align: center;">
+                <img loading="lazy" alt="solutions3" srcset="/images/projects/lolclient/solutions3@1x.png 1x,
+                        /images/projects/lolclient/solutions3@2x.png 2x,
+                        /images/projects/lolclient/solutions3@3x.png 3x" src="/images/projects/lolclient/solutions3@3x.png">
+            </div>
+
+            <h2>Preference Testing</h2>
+            <p>I have added the restore default button with two choices, and conducted preference testing to decide the final
+                option
+                to see which UI version does players choose. Preference Testing is done with recurrent players of the game, the
+                restriction of counting as recurrent players were set as minimum 3 hours of game time per week. The problem was
+                close
+                CTA buttons which are confusing the users. “A” option contained design fixes addressed with the “Reset Defaults”
+                icon
+                button placed in the upper right corner. Option “B”, was the “Restore Defaults” text version of the button added
+                in
+                the upper right corner. The control was “C” , the interface currently implemented in the page. <br>The test
+                consisted
+                of twelve people, the participants asked whether they choose A, B or C options. Option A had selection rate of 50%
+                ,
+                Option B had 33% and control Option C got 17%.</p>
+            <p>With this result I have addressed one more page which is emote page, this page formerly had icon version of restore
+                defaults but with update it was removed. I have reimplemented restore defaults to the emotes page.</p>
+
+            <div class="project-work">
+                <img loading="lazy" alt="Emotes 1" srcset="/images/projects/lolclient/Emotes 1@1x.png 1x,
+                            /images/projects/lolclient/Emotes 1@2x.png 2x,
+                            /images/projects/lolclient/Emotes 1@3x.png 3x" src="/images/projects/lolclient/Emotes 1@3x.png">
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>In summary, user experience challenges were addressed by fixing the confusion around headers , changing containers
+                for
+                consistency, decreasing time spent by adding dropdown options and navigation. Lastly to increase user engagement,
+                restore default function's placement have been changed. This changes will help the LoL client to be more inline
+                and
+                cohesive across other pages of the UI.</p>
+
+            <p style="font-size: 14px; font-style: italic;">PS: This research is statistically non-significant due to the small
+                sample
+                size.</p>
+
+
+            <div class="project-work" style="display: flex;">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin: auto;" width="800" height="450"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FkE3kGXejjkp3CH2XA880at%2FLeague-of-Legends-Client---Redesign%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dow9Fp0p8KfeKs8SQ-1"
+                    allowfullscreen></iframe>
+            </div>
+
+            <p style="font-size: 14px; font-style: italic; font-weight: 700;">Disclaimer: This case study is a personal redesign to showcase my skills and has nothing to do with neither Riot Games nor League of Legends brands. As a person who enjoys League of Legends, by doing this redesign I have tackled a frustration I was experiencing.</p>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

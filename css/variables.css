@@ -1,0 +1,28 @@
+
+:root {
+    --color-primary: #303030;
+    --color-secondary: #6F38C5;
+
+    --body-background-color: #B7DCF4;
+
+    --78px-in-vh: 7.6vh;
+    --30px-in-vh: 2.9vh;
+    --15px-in-vh: 1.46vh;
+    --16px-in-vh: 1.56vh;
+    --363px-in-vh: 35.4vh;
+    --339px-in-vh: 33.1vh;
+    --25px-in-vh: 2.44vh;
+    --80px-in-vh: 7.8vh;
+    --32px-in-vh: 3.1vh;
+    --36px-in-vh: 3.5vh;
+    --24px-in-vh: 2.3vh;
+    --50px-in-vh: 4.88vh;
+    --20px-in-vh: 1.95vh;
+    --55px-in-vh: 5.37vh;
+    --12px-in-vh: 1.17vh;
+    --18px-in-vh: 1.75vh;
+    --739px-in-vh: 72.16vh;
+    --494px-in-vh: 48.24vh;
+    --46px-in-vh: 4.49vh;
+    --27px-in-vh: 2.63vh;
+}

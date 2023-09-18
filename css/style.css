@@ -1,0 +1,354 @@
+/* START: CSS VARIABLES  */
+
+@font-face {
+    font-family: "Ravioli Serif Font";
+    src: url("/font/Ravioli-Serif-Font.ttf");
+}
+
+/* END: CSS VARIABLES  */
+
+/* Horizontal scroll setup */
+.horizontal-scroll-base {
+    overscroll-behavior: none;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.section {
+    height: 100%;
+}
+
+.section.hero,
+.section.about {
+    flex: 0 0 100vw;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: "Ravioli Serif Font";
+    color: var(--color-primary);
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: var(--78px-in-vh);
+    line-height: var(--78px-in-vh);
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.button-primary {
+    cursor: pointer;
+    padding: 15px 45px;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #FFF;
+    background-color: var(--color-secondary);
+    border: none;
+    font-weight: 700;
+}
+
+.container {
+    height: 100%;
+    width: min(100%, 1440px);
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+}
+
+.centered-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling */
+body {
+    background-color: var(--body-background-color);
+    color: var(--color-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "tablet-gothic";
+}
+
+.hero, .about {
+    position: relative;
+}
+
+.hero h1 {
+    margin-top: calc(var(--30px-in-vh) * (-1));
+}
+
+.hero p {
+    font-family: "Ravioli Serif Font";
+    font-size: var(--30px-in-vh);
+    line-height: var(--30px-in-vh);
+    margin-top: var(--15px-in-vh);
+}
+
+.hero .btn {
+    margin-top: var(--30px-in-vh);
+}
+
+.hero .logo {
+    position: absolute;
+    bottom: 0;
+    left: 85px;
+}
+
+.hero .logo img {
+    height: min(var(--363px-in-vh), 363px);
+}
+
+
+.hero .logo-mobile {
+    display: none;
+}
+
+.hero .my-works-sign {
+    position: absolute;
+    bottom: 0;
+    right: 85px;
+}
+
+.hero .my-works-sign img {
+    height: min(var(--363px-in-vh), 363px);
+}
+
+.hero .my-works-horizontal {
+    display: none;
+}
+
+.works {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 86px;
+    padding: 0 261px;
+    background: url('/images/plane.svg') no-repeat center/calc(100% - 522px);
+}
+
+.works .project-box {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.works .project-box:nth-of-type(odd) {
+    transform: translateY(-80px);
+}
+
+.works .project-box:nth-of-type(even) {
+    transform: translateY(80px);
+}
+
+.works .project-box:last-child {
+    margin-right: 622px;
+}
+
+.works .project-image {
+    overflow: hidden;
+    width: 215px;
+    height: 215px;
+    border-radius: 62px;
+}
+
+.works .project-title, .works .project-genre {
+    margin-top: 10px;
+}
+
+.about .container {
+    width: min(100%, 700px);
+}
+
+.about .container .luna-illustration {
+    width: 220px;
+}
+
+.about .about-text {
+    margin-top: var(--30px-in-vh);
+    font-size: var(--24px-in-vh);
+    line-height: var(--36px-in-vh);
+}
+
+.about .lets-chat-text {
+    margin-top: var(--50px-in-vh);
+    font-size: var(--20px-in-vh);
+    line-height: var(--30px-in-vh);
+    max-width: var(--494px-in-vh);
+}
+
+.about .contact-links {
+    display: flex;
+    gap: 10px;
+    margin-top: var(--55px-in-vh);
+}
+
+.about .contact-links .contact-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+
+.about .contact-links .contact-item img {
+    height: var(--46px-in-vh);
+    width: var(--46px-in-vh);
+}
+
+.about .contact-links .contact-item p {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background-color: #FFF;
+    width: 193px;
+}
+
+.about .contact-links .contact-item p:hover {
+    box-shadow: 0 0 5px 2px #6A4D9F;
+}
+
+
+/* ASSETS */
+.background-filling {
+    position: absolute;
+    z-index: -1;
+}
+
+#wind {
+    top: 0;
+    left: 250px;
+    max-width: unset;
+}
+
+#fivebirds, #fivebats {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 288px;
+    opacity: .7;
+}
+
+#cloud1 {
+    top: 250px;
+    left: 0;
+}
+
+#cloud2 {
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#cloud3 {
+    top: 350px;
+    right: 0;
+}
+
+#sun, #moon {
+    top: 0;
+    right: 0;
+    transform: translateX(40%);
+}
+
+#balloon1 {
+    top: 65px;
+    left: 18%;
+}
+
+#cloud4 {
+    top: 105px;
+    left: 22%;
+}
+
+#cloud5 {
+    top: 35px;
+    left: 55%;
+}
+
+#balloon2 {
+    top: 95px;
+    left: 72%;
+}
+
+#balloon3 {
+    bottom: 0;
+    left: 50%
+}
+
+#about-bird {
+    top: 173px;
+    left: 100px;
+}
+
+/* Toggle */
+.theme-toggle {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    width: 100px;
+    height: 60px;
+    z-index: 9;
+}
+
+.theme-toggle input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.theme-toggle label {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background: url('/images/toggle-dark-bg.svg') no-repeat center/100%;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.theme-toggle label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background: url('/images/toggle-moon.svg') no-repeat center/100%;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.theme-toggle input:checked+label {
+    background: url('/images/toggle-light-bg.svg') no-repeat center/100%;
+}
+
+.theme-toggle input:checked+label:after {
+    right: calc(100% - 5px);
+    transform: translateX(100%);
+    background: url('/images/toggle-sun.svg') no-repeat center/100%;
+}
+
+hr {
+    display: none;
+}
