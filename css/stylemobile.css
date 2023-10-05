@@ -126,6 +126,10 @@
         display: none;
     }
 
+    .about .contact-links .contact-item.contact-item-behance.contact-item-behance {
+        display: block;
+    }
+
     .about .container {
         padding: 0 30px;
     }
@@ -145,5 +149,9 @@
         font-size: 13px;
         line-height: 16px;
         max-width: var(--494px-in-vh);
+    }
+    
+    #behance-tag {
+        display: none;
     }
 }

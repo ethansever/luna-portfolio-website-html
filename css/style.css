@@ -210,6 +210,9 @@ body {
     color: var(--color-primary);
 }
 
+.about .contact-links .contact-item.contact-item-behance {
+    display: none;
+}
 
 .about .contact-links .contact-item img {
     height: var(--46px-in-vh);
@@ -226,9 +229,8 @@ body {
 }
 
 .about .contact-links .contact-item p:hover {
-    box-shadow: 0 0 5px 2px #6A4D9F;
+    box-shadow: 0 0 1px 2px #6A4D9F;
 }
-
 
 /* ASSETS */
 .background-filling {
@@ -351,4 +353,10 @@ body {
 
 hr {
     display: none;
+}
+
+#behance-tag {
+    position: absolute;
+    top: 0;
+    right: 100px;
 }
