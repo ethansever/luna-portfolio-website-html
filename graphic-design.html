@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi I'm Luna, a UI/UX Designer based in Vancouver." />
+    <link rel="stylesheet" href="https://use.typekit.net/adk4jxe.css">
+    <link rel="stylesheet" href="css/cssreset-2023_10_05.css">
+    <link rel="stylesheet" href="css/variables-2023_10_05.css">
+    <link rel="stylesheet" href="css/btn-2023_10_05.css">
+    <link rel="stylesheet" href="css/project-page-2023_10_05.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <title>Luna - Graphic Design</title>
+
+    <!-- Page specific CSS -->
+    <style>
+        .btn-2 {
+            box-shadow: 0 6px #80B473;
+        }
+
+        .btn-2g:hover {
+            box-shadow: 0 4px #80B473;
+        }
+
+        .btn-2g:active {
+            box-shadow: 0 0 #80B473;
+        }
+
+        .project-page {
+            background-color: #DFECDC;
+        }
+
+        .graphic-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .graphic-box {
+            flex: 0 0 333px;
+            height: 226px;
+            border-radius: 4px;
+            background: lightcoral;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        .graphic-box img {
+            max-height: unset;
+        }
+
+        .d-none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="project-page">
+    <header class="header">
+        <img id="brightness" src="images/brightness.svg" alt="">
+        <div class="column">
+            <a href="/" class="btn btn-2 btn-2g back-btn desktop">Home</a>
+        </div>
+        <div class="column logo">
+            <img src="images/logo-moon-white.svg" alt="">
+        </div>
+        <div class="column"></div>
+    </header>
+    <a href="/" class="btn btn-2 btn-2g back-btn mobile">Home</a>
+    <main class="graphic-container">
+
+        <a class="graphic-box" href="/images/projects/thumbnails/cybercity.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
+            <img src="/images/projects/thumbnails/cybercity.png" />
+        </a>
+        <div class="d-none">
+            <a href="/images/projects/cybercity/1@1x.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
+                <img src="/images/projects/cybercity/1@1x.png" />
+            </a>
+            <a href="/images/projects/cybercity/2@1x.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
+                <img src="/images/projects/cybercity/2@1x.png" />
+            </a>
+            <a href="/images/projects/cybercity/3@1x.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
+                <img src="/images/projects/cybercity/3@1x.png" />
+            </a>
+            <a href="/images/projects/cybercity/4@1x.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
+                <img src="/images/projects/cybercity/4@1x.png" />
+            </a>
+        </div>
+
+
+        <a class="graphic-box" href="/images/projects/thumbnails/colourfit.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
+            <img src="/images/projects/thumbnails/colourfit.png" />
+        </a>
+        <div class="d-none">
+            <a href="/images/projects/colourfit/colours-1x.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
+                <img src="/images/projects/colourfit/colours-1x.png" />
+            </a>
+            <a href="/images/projects/colourfit/colours-1x.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
+                <img src="/images/projects/colourfit/colours-1x.png" />
+            </a>
+            <a href="/images/projects/colourfit/colours-1x.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
+                <img src="/images/projects/colourfit/colours-1x.png" />
+            </a>
+            <a href="/images/projects/colourfit/colours-1x.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
+                <img src="/images/projects/colourfit/colours-1x.png" />
+            </a>
+        </div>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {});
+    </script>
+</body>
+
+</html>

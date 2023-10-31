@@ -26,7 +26,9 @@
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Ravioli Serif Font";
     color: var(--color-primary);
     font-style: normal;
@@ -86,7 +88,8 @@ body {
     font-family: "tablet-gothic";
 }
 
-.hero, .about {
+.hero,
+.about {
     position: relative;
 }
 
@@ -170,9 +173,23 @@ body {
     border-radius: 62px;
 }
 
-.works .project-title, .works .project-genre {
+.to-graphic-design > * {
+    transition: all .35s;
+}
+
+.to-graphic-design .project-image:hover {
+    transform: rotate(45deg);
+}
+
+.works .project-title,
+.works .project-genre {
     margin-top: 10px;
 }
+
+.to-graphic-design:hover .project-title {
+    margin-top: 20px;
+}
+
 
 .about .container {
     width: min(100%, 700px);
@@ -244,7 +261,8 @@ body {
     max-width: unset;
 }
 
-#fivebirds, #fivebats {
+#fivebirds,
+#fivebats {
     top: 50%;
     transform: translateY(-50%);
     left: 288px;
@@ -267,7 +285,8 @@ body {
     right: 0;
 }
 
-#sun, #moon {
+#sun,
+#moon {
     top: 0;
     right: 0;
     transform: translateX(40%);
