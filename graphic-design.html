@@ -18,19 +18,19 @@
     <!-- Page specific CSS -->
     <style>
         .btn-2 {
-            box-shadow: 0 6px #80B473;
+            box-shadow: 0 6px #4D96C1;
         }
 
         .btn-2g:hover {
-            box-shadow: 0 4px #80B473;
+            box-shadow: 0 4px #4D96C1;
         }
 
         .btn-2g:active {
-            box-shadow: 0 0 #80B473;
+            box-shadow: 0 0 #4D96C1;
         }
 
         .project-page {
-            background-color: #DFECDC;
+            background-color: #D6E7F1;
         }
 
         .graphic-container {
@@ -40,19 +40,40 @@
             gap: 20px;
             max-width: 1200px;
             margin: auto;
+            padding: 50px;
+            background-color: #FFF;
+            box-shadow: 0px 4px 12px 0px rgba(31, 27, 45, 0.08), 0px 2px 2px -2px rgba(31, 27, 45, 0.08);
+            border-radius: 10px;
+            border: 1px solid var(--gray-300, #EFECF3);
+            opacity: 0.95;
+            background: #FFF;
         }
 
         .graphic-box {
-            flex: 0 0 333px;
-            height: 226px;
+            flex: 0 0 249px;
+            height: 190px;
             border-radius: 4px;
             background: lightcoral;
             object-fit: cover;
             overflow: hidden;
+            position: relative;
         }
 
         .graphic-box img {
             max-height: unset;
+        }
+
+        .graphic-box .tag {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            padding: 2px 5px;
+            background-color: #f5f5f6;
+            fill-opacity: 0.1;
+            border: 1px solid lightblue;
+            border-radius: 16px;
+            font-size: 9px;
+            color: black;
         }
 
         .d-none {
@@ -72,46 +93,120 @@
         </div>
         <div class="column"></div>
     </header>
+
     <a href="/" class="btn btn-2 btn-2g back-btn mobile">Home</a>
     <main class="graphic-container">
 
-        <a class="graphic-box" href="/images/projects/thumbnails/cybercity.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
-            <img src="/images/projects/thumbnails/cybercity.png" />
+        <a class="graphic-box" href="/images/projects/graphicdesign/zanova-refillpackage1.jpg"
+            data-fancybox="graphic-design" data-caption="Zanova Liquid Hand Soap Refill Package">
+            <img src="/images/projects/graphicdesign/zanova-refillpackage1.jpg" />
+            <div class="tag">Product Design</div>
         </a>
         <div class="d-none">
-            <a href="/images/projects/cybercity/1@1x.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
-                <img src="/images/projects/cybercity/1@1x.png" />
+            <a href="/images/projects/graphicdesign/zanova-refillpackage2.png" data-fancybox="graphic-design"
+                data-caption="Zanova Liquid Hand Soap Refill Package - Front Side">
+                <img src="/images/projects/graphicdesign/zanova-refillpackage2.png" />
             </a>
-            <a href="/images/projects/cybercity/2@1x.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
-                <img src="/images/projects/cybercity/2@1x.png" />
-            </a>
-            <a href="/images/projects/cybercity/3@1x.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
-                <img src="/images/projects/cybercity/3@1x.png" />
-            </a>
-            <a href="/images/projects/cybercity/4@1x.png" data-fancybox="fancybox_cybercity" data-caption="Cybercity caption">
-                <img src="/images/projects/cybercity/4@1x.png" />
+            <a href="/images/projects/graphicdesign/zanova-refillpackage3.png" data-fancybox="graphic-design"
+                data-caption="Zanova Liquid Hand Soap Refill Package - Back Side">
+                <img src="/images/projects/graphicdesign/zanova-refillpackage3.png" />
             </a>
         </div>
 
-
-        <a class="graphic-box" href="/images/projects/thumbnails/colourfit.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
-            <img src="/images/projects/thumbnails/colourfit.png" />
+        <a class="graphic-box" href="/images/projects/graphicdesign/blockchainwall1.png" data-fancybox="graphic-design"
+            data-caption="Blockchainist Wall Design">
+            <img src="/images/projects/graphicdesign/blockchainwall1.png" />
+            <div class="tag">Wall Design</div>
         </a>
         <div class="d-none">
-            <a href="/images/projects/colourfit/colours-1x.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
-                <img src="/images/projects/colourfit/colours-1x.png" />
+            <a href="/images/projects/graphicdesign/blockchainwall2.jpg" data-fancybox="graphic-design"
+                data-caption="Blockchainist Wall Design">
+                <img src="/images/projects/graphicdesign/blockchainwall2.jpg" />
             </a>
-            <a href="/images/projects/colourfit/colours-1x.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
-                <img src="/images/projects/colourfit/colours-1x.png" />
-            </a>
-            <a href="/images/projects/colourfit/colours-1x.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
-                <img src="/images/projects/colourfit/colours-1x.png" />
-            </a>
-            <a href="/images/projects/colourfit/colours-1x.png" data-fancybox="fancybox_colourfit" data-caption="colourfit caption">
-                <img src="/images/projects/colourfit/colours-1x.png" />
+            <a href="/images/projects/graphicdesign/blockchainwall3.jpeg" data-fancybox="graphic-design"
+                data-caption="Blockchainist Wall Design">
+                <img src="/images/projects/graphicdesign/blockchainwall3.jpeg" />
             </a>
         </div>
 
+        <a class="graphic-box" href="/images/projects/graphicdesign/gallop-onepager.png" data-fancybox="graphic-design"
+            data-caption="Gallop - One Pager">
+            <img src="/images/projects/graphicdesign/gallop-onepager.png" />
+            <div class="tag">Brochure Design</div>
+        </a>
+
+        </div>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/zanova-lipmask1.jpg" data-fancybox="graphic-design"
+            data-caption="Zanova Lip Mask Package Design">
+            <img src="/images/projects/graphicdesign/zanova-lipmask1.jpg" />
+            <div class="tag">Product Design</div>
+        </a>
+        <div class="d-none">
+            <a href="/images/projects/graphicdesign/zanova-lipmask2.jpg" data-fancybox="graphic-design"
+                data-caption="Zanova Lip Mask Package Design">
+                <img src="/images/projects/graphicdesign/zanova-lipmask2.jpg" />
+            </a>
+
+        </div>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/gallop-logo.jpg" data-fancybox="graphic-design"
+            data-caption="Gallop - Logo Design">
+            <img src="/images/projects/graphicdesign/gallop-logo.jpg" />
+            <div class="tag">Logo Design</div>
+        </a>
+
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/gallop-socialmedia.png"
+            data-fancybox="graphic-design" data-caption="Gallop - Social Media Post Design">
+            <img src="/images/projects/graphicdesign/gallop-socialmedia.png" />
+            <div class="tag">Graphic Design</div>
+
+        </a>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/gastownclocksticker.png"
+            data-fancybox="graphic-design" data-caption="Gastown Clock Sticker Design">
+            <img src="/images/projects/graphicdesign/gastownclocksticker.png" />
+            <div class="tag">Illustration</div>
+        </a>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/lepetitmaison-bottledesign.png"
+            data-fancybox="graphic-design" data-caption="Wine Bottle Design">
+            <img src="/images/projects/graphicdesign/lepetitmaison-bottledesign.png" />
+            <div class="tag">Product Design</div>
+        </a>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/rosso-decaldesign.png"
+            data-fancybox="graphic-design" data-caption="Rosso Motors - Decal Design">
+            <img src="/images/projects/graphicdesign/rosso-decaldesign.png" />
+            <div class="tag">Product Design</div>
+        </a>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/zanova-footmask.png" data-fancybox="graphic-design"
+            data-caption="Zanova - Footmask Design">
+            <img src="/images/projects/graphicdesign/zanova-footmask.png" />
+            <div class="tag">Product Design</div>
+
+        </a>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/zanova-handmask.png" data-fancybox="graphic-design"
+            data-caption="Zanova - Handmask Design">
+            <img src="/images/projects/graphicdesign/zanova-handmask.png" />
+            <div class="tag">Product Design</div>
+
+        </a>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/habitgain.png" data-fancybox="graphic-design"
+            data-caption="Habit Gain - User Interface Design">
+            <img src="/images/projects/graphicdesign/habitgain.png" />
+            <div class="tag">UI Design</div>
+        </a>
+
+        <a class="graphic-box" href="/images/projects/graphicdesign/avatars.png" data-fancybox="graphic-design"
+            data-caption="Colourfit - Avatar Illustrations">
+            <img src="/images/projects/graphicdesign/avatars.png" />
+            <div class="tag">Illustrations</div>
+        </a>
 
     </main>
 
