@@ -173,7 +173,7 @@ body {
     border-radius: 62px;
 }
 
-.to-graphic-design > * {
+.to-graphic-design>* {
     transition: all .35s;
 }
 
@@ -190,6 +190,15 @@ body {
     margin-top: 20px;
 }
 
+
+.to-work-design>* {
+    transition: all .35s;
+}
+
+
+.to-work-design:hover .project-title {
+    margin-top: 20px;
+}
 
 .about .container {
     width: min(100%, 700px);
