@@ -62,3 +62,5 @@ document.getElementById("switch").addEventListener("change", function () {
         document.querySelector("html").removeAttribute("data-theme");
     }
 });
+
+console.log('welcome!');
