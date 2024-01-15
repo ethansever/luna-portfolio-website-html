@@ -236,7 +236,7 @@ body {
     color: var(--color-primary);
 }
 
-.about .contact-links .contact-item.contact-item-behance {
+.about .contact-links .contact-item.contact-item-artstation {
     display: none;
 }
 
@@ -383,8 +383,15 @@ hr {
     display: none;
 }
 
-#behance-tag {
+#artstation-tag {
     position: absolute;
     top: 0;
     right: 100px;
+}
+
+#artstation-text-tag {
+    position: absolute;
+    top: 75px;
+    right: 180px;
+    opacity: 85%;
 }

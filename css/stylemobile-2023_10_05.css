@@ -126,7 +126,7 @@
         display: none;
     }
 
-    .about .contact-links .contact-item.contact-item-behance.contact-item-behance {
+    .about .contact-links .contact-item.contact-item-artstation {
         display: block;
     }
 
@@ -151,7 +151,7 @@
         max-width: var(--494px-in-vh);
     }
     
-    #behance-tag {
+    #artstation-tag, #artstation-text-tag {
         display: none;
     }
 }
