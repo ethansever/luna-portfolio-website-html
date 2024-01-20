@@ -144,7 +144,7 @@ body {
     align-items: center;
     gap: 86px;
     padding: 0 261px;
-    background: url('/images/plane.svg') no-repeat center/calc(100% - 522px);
+    background: url('/images2024/plane.svg') no-repeat center/calc(100% - 522px);
 }
 
 .works .project-box {
@@ -351,7 +351,7 @@ body {
     cursor: pointer;
     width: 100px;
     height: 50px;
-    background: url('/images/toggle-dark-bg.svg') no-repeat center/100%;
+    background: url('/images2024/toggle-dark-bg.svg') no-repeat center/100%;
     display: block;
     border-radius: 100px;
     position: relative;
@@ -364,19 +364,19 @@ body {
     right: 5px;
     width: 40px;
     height: 40px;
-    background: url('/images/toggle-moon.svg') no-repeat center/100%;
+    background: url('/images2024/toggle-moon.svg') no-repeat center/100%;
     border-radius: 90px;
     transition: 0.3s;
 }
 
 .theme-toggle input:checked+label {
-    background: url('/images/toggle-light-bg.svg') no-repeat center/100%;
+    background: url('/images2024/toggle-light-bg.svg') no-repeat center/100%;
 }
 
 .theme-toggle input:checked+label:after {
     right: calc(100% - 5px);
     transform: translateX(100%);
-    background: url('/images/toggle-sun.svg') no-repeat center/100%;
+    background: url('/images2024/toggle-sun.svg') no-repeat center/100%;
 }
 
 hr {
