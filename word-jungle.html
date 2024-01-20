@@ -21,96 +21,39 @@
     <!-- Page specific CSS -->
     <style>
         .btn-2 {
-            box-shadow: 0 6px #EF9B5E;
+            box-shadow: 0 6px #E0935B;
         }
 
         .btn-2g:hover {
-            box-shadow: 0 4px #EF9B5E;
+            box-shadow: 0 4px #E0935B;
         }
 
         .btn-2g:active {
-            box-shadow: 0 0 #EF9B5E;
+            box-shadow: 0 0 #E0935B;
         }
 
         .project-page {
-            background: linear-gradient(0deg, #F8F0DC 0%, #F8F0DC 100%), #FFF;
-        }
-
-        .project-cover {
-            background: linear-gradient(134deg, #EF9B5E 3.77%, #EFBE80 100%);
-            backdrop-filter: blur(5px);
-        }
-
-        .project-page .project-work {
-            margin-top: 0;
-        }
-
-        .word-jungle-prototype {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .word-jungle-prototype>.video {
-            flex: 0 0 210px;
-        }
-
-        .word-jungle-prototype>.desc {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 14px;
-            line-height: 150%;
-            /* 21px */
-            letter-spacing: -0.5px;
-            color: #444;
-            flex: 1 1 auto;
-            padding: 22px 26px;
-            border-radius: 50px;
-            background: rgba(241, 225, 186, 0.50);
-        }
-
-        @media (max-width: 900px) {
-            .word-jungle-prototype {
-                flex-direction: column;
-            }
+            background: linear-gradient(0deg, #F8F0DC 0%, #eee9d2 100%), #FFF;
         }
 
         .project-page .project-container-white-square {
-            background: #505D3C;
-            padding: 75px 0;
             overflow: hidden;
         }
 
-        .project-page .project-container-white-square>* {
-            padding-left: 95px;
-            padding-right: 95px;
+        .mobile {
+            display: none;
         }
 
-        .skew-to-left,
-        .skew-to-right {
-            background: #F1E1BA;
-            padding-top: 75px !important;
-            padding-bottom: 75px !important;
-        }
-        .spaced {
-            padding-top: 75px !important;
-            padding-bottom: 75px !important;
+        @media screen and (max-width: 991px) { 
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
         }
 
-        .skew-to-left {
-            transform: skew(0deg, -5deg);
-        }
 
-        .skew-to-right {
-            transform: skew(0deg, 5deg);
-        }
-
-        .skew-to-left .content {
-            transform: skew(0deg, 5deg);
-        }
-
-        .skew-to-right .content {
-            transform: skew(0deg, -5deg);
-        }
     </style>
 </head>
 
@@ -120,123 +63,36 @@
         <div class="column">
             <a href="/" class="btn btn-2 btn-2g back-btn desktop">Home</a>
         </div>
-        <div class="column logo">
+      <!--  <div class="column logo">
             <img src="images/logo-moon-white.svg" alt="">
-        </div>
+        </div> -->
         <div class="column"></div>
     </header>
     <a href="/" class="btn btn-2 btn-2g back-btn mobile">Home</a>
-    <div class="project-hero">
-        <div class="project-cover">
-            <img width="244" height="220" alt="word-jungle-cover" srcset="/images/projects/word-jungle/cover@1x.png 1x,
-                        /images/projects/word-jungle/cover@2x.png 2x,
-                        /images/projects/word-jungle/cover@3x.png 3x" src="/images/projects/word-jungle/cover@3x.png">
-        </div>
+  <div class="project-hero">
         <div class="project-credentials">
-            <h1>Word Jungle</h1>
-            <div class="project-type">Game - UX/UI Design</div>
+            <img src="/images/projects/word-jungle/logo.png" alt="banner">
             <p class="project-description">
                 Word Jungle is a fictional word puzzle mobile game which combines creating words with crossword puzzle.
             </p>
-            <div class="project-details">
-                <div><strong>Date</strong></div>
-                <div>September 2023</div>
-                <div><strong>My role</strong></div>
-                <div>UX/UI Designer</div>
-                <div><strong>Team size</strong></div>
-                <div>N/A</div>
-            </div>
         </div>
-    </div>
+    </div> 
     <main class="project-container">
         <div class="project-container-white-square">
-
-            <!-- <div class="project-work">
-                <img loading="lazy" alt="logo" srcset="/images/projects/word-jungle/logo@1x.png 1x,
-                /images/projects/word-jungle/logo@2x.png 2x,
-                /images/projects/word-jungle/logo@3x.png 3x" src="/images/projects/word-jungle/logo@1x.png">
-            </div> -->
-
-            <div class="skew-to-left">
-                <div class="content">
-
-                    <div class="project-work ">
-                        <img loading="lazy" alt="overview" srcset="/images/projects/word-jungle/overview@2x.png 1x,
-                /images/projects/word-jungle/overview@2x.png 2x,
-                /images/projects/word-jungle/overview@3x.png 3x" src="/images/projects/word-jungle/overview@1x.png">
-                    </div>
-
-                    <div class="project-work word-jungle-prototype" style="margin-top: 30px;">
-                        <div class="video">
-                            <video style="max-width: 100%; height: 373px;" controls autoplay muted>
-                                <source src="/images/projects/word-jungle/Word Jungle-Prototype.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="desc">
-                            Word Jungle is a fictional word puzzle mobile game which combines creating words with crossword
-                            puzzle. The
-                            aim of this project was to create a word game with a fun and lively environment yet keep colors muted
-                            to not
-                            overwhelm the user, create clear game environment and keep the
-                            focus on the letter tiles.
-                            <br>
-                            <br>
-                            I have used Figma for wireframing, designing and prototyping. All assets throughout the design were
-                            created by
-                            me and done in Adobe Illustrator, Photoshop and Figma.I have used Figma for wireframing, designing and
-                            prototyping. All assets throughout the design were created by me and done in Adobe Illustrator,
-                            Photoshop and
-                            Figma.
-                            <br>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <img src="/images/projects/word-jungle/content1.jpg" alt="content" class="desktop">
+            <img src="/images/projects/word-jungle/content2.gif" alt="content" class="desktop">
+            <img src="/images/projects/word-jungle/content3.gif" alt="content" class="desktop">
+            <img src="/images/projects/word-jungle/content4.gif" alt="content" class="desktop">
+            <img src="/images/projects/word-jungle/content5.jpg" alt="content" class="desktop">
+            <img src="/images/projects/word-jungle/content6.jpg" alt="content" class="desktop">
+            <img src="/images/projects/word-jungle/content7.jpg" alt="content" class="desktop">
+            <img src="/images/projects/word-jungle/mobile content1.jpg" alt="content" class="mobile">
+            <img src="/images/projects/word-jungle/mobile content2.jpg" alt="content" class="mobile">
+            <img src="/images/projects/word-jungle/mobile content3.jpg" alt="content" class="mobile">
+            <img src="/images/projects/word-jungle/mobile content4.jpg" alt="content" class="mobile">
+            <img src="/images/projects/word-jungle/mobile content5.jpg" alt="content" class="mobile">
 
 
-            <div class="spaced">
-                <div class="project-work">
-                    <img loading="lazy" alt="moodboard" srcset="/images/projects/word-jungle/moodboard@2x.png 1x,
-                /images/projects/word-jungle/moodboard@2x.png 2x,
-                /images/projects/word-jungle/moodboard@3x.png 3x" src="/images/projects/word-jungle/moodboard@1x.png">
-                </div>
-            </div>
-
-
-            <div class="project-work skew-to-right">
-                <div class="content">
-                    <img loading="lazy" alt="uikit" srcset="/images/projects/word-jungle/uikit@2x.png 1x,
-                    /images/projects/word-jungle/uikit@2x.png 2x,
-                    /images/projects/word-jungle/uikit@3x.png 3x" src="/images/projects/word-jungle/uikit@1x.png">
-                </div>
-            </div>
-
-            <div class="spaced">
-                <div class="project-work">
-                    <img loading="lazy" alt="Diagramflow" srcset="/images/projects/word-jungle/Diagramflow@2x.png 1x,
-                /images/projects/word-jungle/Diagramflow@2x.png 2x,
-                /images/projects/word-jungle/Diagramflow@3x.png 3x" src="/images/projects/word-jungle/Diagramflow@1x.png">
-                </div>
-            </div>
-
-            <div class="skew-to-left">
-                <div class="content">
-                    <div class="project-work ">
-                        <img loading="lazy" alt="wireframes" srcset="/images/projects/word-jungle/wireframes@2x.png 1x,
-                        /images/projects/word-jungle/wireframes@2x.png 2x,
-                        /images/projects/word-jungle/wireframes@3x.png 3x" src="/images/projects/word-jungle/wireframes@1x.png">
-                    </div>
-
-                    <div class="project-work" style="padding-top: 75px">
-                        <img loading="lazy" alt="mockups" srcset="/images/projects/word-jungle/mockups@2x.png 1x,
-                    /images/projects/word-jungle/mockups@2x.png 2x,
-                    /images/projects/word-jungle/mockups@3x.png 3x" src="/images/projects/word-jungle/mockups@1x.png">
-                    </div>
-                </div>
-            </div>
 
         </div>
 
